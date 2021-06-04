@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lexis Glyphs Reference</title>
+  <!-- Fonts -->
+  <style>
+    /* Normalize */
+    html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}h1{font-size:2em;margin:.67em 0}dl dl,dl ol,dl ul,ol dl,ul dl{margin:0}ol ol,ol ul,ul ol,ul ul{margin:0}hr{box-sizing:content-box;color:inherit;height:0;overflow:visible}main{display:block}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}table{border-color:inherit;text-indent:0}button,input,select{margin:0}button{overflow:visible;text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}fieldset{padding:.35em .75em .625em}input{overflow:visible}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;white-space:normal}progress{display:inline-block;vertical-align:baseline}select{text-transform:none}textarea{margin:0;overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}details{display:block}dialog{background-color:#fff;border:solid;color:#000;display:block;height:-moz-fit-content;height:-webkit-fit-content;height:fit-content;left:0;margin:auto;padding:1em;position:absolute;right:0;width:-moz-fit-content;width:-webkit-fit-content;width:fit-content}dialog:not([open]){display:none}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+    /* Fonts */
+    @font-face {
+        font-family: 'Lexis';
+        src: url('fonts/lexis.woff2') format('woff2'),
+            url('fonts/lexis.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    /* Variables */
+    :root {
+      --text: rgb(16,16,16);
+      --page: rgb(240,240,240);
+      --body: rgb(255,255,255);
+    }
+    /* Light mode */
+    @media (prefers-color-scheme: light) {
+      :root {
+        --text: rgb(16,16,16);
+        --page: rgb(240,240,240);
+        --body: rgb(255,255,255);
+      }
+    }
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: rgb(240,240,240);
+        --page: rgb(16,16,16);
+        --body: rgb(0,0,0);
+      }
+    }
+    /* Styles */
+    body {
+      background-color: var(--page);
+      color: var(--text);
+      font-family: sans-serif;
+      font-size: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    a {
+      color: #369;
+    }
+    .wrapper {
+      width: 100%;
+      max-width: 75rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 3rem 1.5rem 2rem;
+      background-color: var(--body);
+    }
+    .title {
+      margin: 1.5rem 0;
+    }
+    .description {
+      margin-bottom: 0;
+    }
+    .main {
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: flex-start;
+    }
+    .group {
+      margin-top: 3rem;
+      width: 100%;
+      font-weight: 400;
+    }
+    .subgroup {
+      margin-top: 1.5rem;
+      width: 100%;
+      font-style: italic;
+      font-weight: 400;
+      opacity: .5;
+    }
+    .group + .subgroup {
+      margin-top: 0;
+    }
+    .glyph {
+      width: 3rem;
+      flex: 0 1 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: center;
+      box-sizing: border-box;
+      margin: 1px;
+    }
+    .char {
+      width: 100%;
+      height: 2.75rem;
+      flex: 0 0 auto;
+      font-family: 'Lexis', monospace;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1;
+      background-color: rgba(128,128,128,.15);
+      color: var(--text);
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .unicode {
+      width: 100%;
+      font-size: .625rem;
+      padding: .25rem 0;
+      text-align: center;
+      color: white;
+      background-color: #369;
+      text-transform: uppercase;
+    }
+    footer {
+      margin: 2rem 0 1rem;
+      font-size: .75rem;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="title">Lexis Glyphs Reference</h1>
+    <p class="description">The following charts show the Unicode mappings for the glyphs included in the Lexis ASCII font. The main mapping is shown. This is a 6x8 pixel font.</p>
+    <section class="main">
+
+      <h2 class="group">Basic Latin</h2>
+
+      <!-- 0x20 -->
+      <div class="glyph"><span class="char">&#x20;</span><span class="unicode">0020</span></div>
+      <div class="glyph"><span class="char">&#x21;</span><span class="unicode">0021</span></div>
+      <div class="glyph"><span class="char">&#x22;</span><span class="unicode">0022</span></div>
+      <div class="glyph"><span class="char">&#x23;</span><span class="unicode">0023</span></div>
+      <div class="glyph"><span class="char">&#x24;</span><span class="unicode">0024</span></div>
+      <div class="glyph"><span class="char">&#x25;</span><span class="unicode">0025</span></div>
+      <div class="glyph"><span class="char">&#x26;</span><span class="unicode">0026</span></div>
+      <div class="glyph"><span class="char">&#x27;</span><span class="unicode">0027</span></div>
+      <div class="glyph"><span class="char">&#x28;</span><span class="unicode">0028</span></div>
+      <div class="glyph"><span class="char">&#x29;</span><span class="unicode">0029</span></div>
+      <div class="glyph"><span class="char">&#x2a;</span><span class="unicode">002A</span></div>
+      <div class="glyph"><span class="char">&#x2b;</span><span class="unicode">002B</span></div>
+      <div class="glyph"><span class="char">&#x2c;</span><span class="unicode">002C</span></div>
+      <div class="glyph"><span class="char">&#x2d;</span><span class="unicode">002D</span></div>
+      <div class="glyph"><span class="char">&#x2e;</span><span class="unicode">002E</span></div>
+      <div class="glyph"><span class="char">&#x2f;</span><span class="unicode">002F</span></div>
+      <!-- 0x30 -->
+      <div class="glyph"><span class="char">&#x30;</span><span class="unicode">0030</span></div>
+      <div class="glyph"><span class="char">&#x31;</span><span class="unicode">0031</span></div>
+      <div class="glyph"><span class="char">&#x32;</span><span class="unicode">0032</span></div>
+      <div class="glyph"><span class="char">&#x33;</span><span class="unicode">0033</span></div>
+      <div class="glyph"><span class="char">&#x34;</span><span class="unicode">0034</span></div>
+      <div class="glyph"><span class="char">&#x35;</span><span class="unicode">0035</span></div>
+      <div class="glyph"><span class="char">&#x36;</span><span class="unicode">0036</span></div>
+      <div class="glyph"><span class="char">&#x37;</span><span class="unicode">0037</span></div>
+      <div class="glyph"><span class="char">&#x38;</span><span class="unicode">0038</span></div>
+      <div class="glyph"><span class="char">&#x39;</span><span class="unicode">0039</span></div>
+      <div class="glyph"><span class="char">&#x3a;</span><span class="unicode">003A</span></div>
+      <div class="glyph"><span class="char">&#x3b;</span><span class="unicode">003B</span></div>
+      <div class="glyph"><span class="char">&#x3c;</span><span class="unicode">003C</span></div>
+      <div class="glyph"><span class="char">&#x3d;</span><span class="unicode">003D</span></div>
+      <div class="glyph"><span class="char">&#x3e;</span><span class="unicode">003E</span></div>
+      <div class="glyph"><span class="char">&#x3f;</span><span class="unicode">003F</span></div>
+      <!-- 0x40 -->
+      <div class="glyph"><span class="char">&#x40;</span><span class="unicode">0040</span></div>
+      <div class="glyph"><span class="char">&#x41;</span><span class="unicode">0041</span></div>
+      <div class="glyph"><span class="char">&#x42;</span><span class="unicode">0042</span></div>
+      <div class="glyph"><span class="char">&#x43;</span><span class="unicode">0043</span></div>
+      <div class="glyph"><span class="char">&#x44;</span><span class="unicode">0044</span></div>
+      <div class="glyph"><span class="char">&#x45;</span><span class="unicode">0045</span></div>
+      <div class="glyph"><span class="char">&#x46;</span><span class="unicode">0046</span></div>
+      <div class="glyph"><span class="char">&#x47;</span><span class="unicode">0047</span></div>
+      <div class="glyph"><span class="char">&#x48;</span><span class="unicode">0048</span></div>
+      <div class="glyph"><span class="char">&#x49;</span><span class="unicode">0049</span></div>
+      <div class="glyph"><span class="char">&#x4a;</span><span class="unicode">004A</span></div>
+      <div class="glyph"><span class="char">&#x4b;</span><span class="unicode">004B</span></div>
+      <div class="glyph"><span class="char">&#x4c;</span><span class="unicode">004C</span></div>
+      <div class="glyph"><span class="char">&#x4d;</span><span class="unicode">004D</span></div>
+      <div class="glyph"><span class="char">&#x4e;</span><span class="unicode">004E</span></div>
+      <div class="glyph"><span class="char">&#x4f;</span><span class="unicode">004F</span></div>
+      <!-- 0x50 -->
+      <div class="glyph"><span class="char">&#x50;</span><span class="unicode">0050</span></div>
+      <div class="glyph"><span class="char">&#x51;</span><span class="unicode">0051</span></div>
+      <div class="glyph"><span class="char">&#x52;</span><span class="unicode">0052</span></div>
+      <div class="glyph"><span class="char">&#x53;</span><span class="unicode">0053</span></div>
+      <div class="glyph"><span class="char">&#x54;</span><span class="unicode">0054</span></div>
+      <div class="glyph"><span class="char">&#x55;</span><span class="unicode">0055</span></div>
+      <div class="glyph"><span class="char">&#x56;</span><span class="unicode">0056</span></div>
+      <div class="glyph"><span class="char">&#x57;</span><span class="unicode">0057</span></div>
+      <div class="glyph"><span class="char">&#x58;</span><span class="unicode">0058</span></div>
+      <div class="glyph"><span class="char">&#x59;</span><span class="unicode">0059</span></div>
+      <div class="glyph"><span class="char">&#x5a;</span><span class="unicode">005A</span></div>
+      <div class="glyph"><span class="char">&#x5b;</span><span class="unicode">005B</span></div>
+      <div class="glyph"><span class="char">&#x5c;</span><span class="unicode">005C</span></div>
+      <div class="glyph"><span class="char">&#x5d;</span><span class="unicode">005D</span></div>
+      <div class="glyph"><span class="char">&#x5e;</span><span class="unicode">005E</span></div>
+      <div class="glyph"><span class="char">&#x5f;</span><span class="unicode">005F</span></div>
+      <!-- 0x60 -->
+      <div class="glyph"><span class="char">&#x60;</span><span class="unicode">0060</span></div>
+      <div class="glyph"><span class="char">&#x61;</span><span class="unicode">0061</span></div>
+      <div class="glyph"><span class="char">&#x62;</span><span class="unicode">0062</span></div>
+      <div class="glyph"><span class="char">&#x63;</span><span class="unicode">0063</span></div>
+      <div class="glyph"><span class="char">&#x64;</span><span class="unicode">0064</span></div>
+      <div class="glyph"><span class="char">&#x65;</span><span class="unicode">0065</span></div>
+      <div class="glyph"><span class="char">&#x66;</span><span class="unicode">0066</span></div>
+      <div class="glyph"><span class="char">&#x67;</span><span class="unicode">0067</span></div>
+      <div class="glyph"><span class="char">&#x68;</span><span class="unicode">0068</span></div>
+      <div class="glyph"><span class="char">&#x69;</span><span class="unicode">0069</span></div>
+      <div class="glyph"><span class="char">&#x6a;</span><span class="unicode">006A</span></div>
+      <div class="glyph"><span class="char">&#x6b;</span><span class="unicode">006B</span></div>
+      <div class="glyph"><span class="char">&#x6c;</span><span class="unicode">006C</span></div>
+      <div class="glyph"><span class="char">&#x6d;</span><span class="unicode">006D</span></div>
+      <div class="glyph"><span class="char">&#x6e;</span><span class="unicode">006E</span></div>
+      <div class="glyph"><span class="char">&#x6f;</span><span class="unicode">006F</span></div>
+      <!-- 0x70 -->
+      <div class="glyph"><span class="char">&#x70;</span><span class="unicode">0070</span></div>
+      <div class="glyph"><span class="char">&#x71;</span><span class="unicode">0071</span></div>
+      <div class="glyph"><span class="char">&#x72;</span><span class="unicode">0072</span></div>
+      <div class="glyph"><span class="char">&#x73;</span><span class="unicode">0073</span></div>
+      <div class="glyph"><span class="char">&#x74;</span><span class="unicode">0074</span></div>
+      <div class="glyph"><span class="char">&#x75;</span><span class="unicode">0075</span></div>
+      <div class="glyph"><span class="char">&#x76;</span><span class="unicode">0076</span></div>
+      <div class="glyph"><span class="char">&#x77;</span><span class="unicode">0077</span></div>
+      <div class="glyph"><span class="char">&#x78;</span><span class="unicode">0078</span></div>
+      <div class="glyph"><span class="char">&#x79;</span><span class="unicode">0079</span></div>
+      <div class="glyph"><span class="char">&#x7a;</span><span class="unicode">007A</span></div>
+      <div class="glyph"><span class="char">&#x7b;</span><span class="unicode">007B</span></div>
+      <div class="glyph"><span class="char">&#x7c;</span><span class="unicode">007C</span></div>
+      <div class="glyph"><span class="char">&#x7d;</span><span class="unicode">007D</span></div>
+      <div class="glyph"><span class="char">&#x7e;</span><span class="unicode">007E</span></div>
+
+      <h2 class="group">Latin-1 Supplement</h2>
+
+      <!-- 0xa0 -->
+      <div class="glyph"><span class="char">&#xa0;</span><span class="unicode">00A0</span></div>
+      <div class="glyph"><span class="char">&#xa1;</span><span class="unicode">00A1</span></div>
+      <div class="glyph"><span class="char">&#xa2;</span><span class="unicode">00A2</span></div>
+      <div class="glyph"><span class="char">&#xa3;</span><span class="unicode">00A3</span></div>
+      <div class="glyph"><span class="char">&#xa4;</span><span class="unicode">00A4</span></div>
+      <div class="glyph"><span class="char">&#xa5;</span><span class="unicode">00A5</span></div>
+      <div class="glyph"><span class="char">&#xa6;</span><span class="unicode">00A6</span></div>
+      <div class="glyph"><span class="char">&#xa7;</span><span class="unicode">00A7</span></div>
+      <div class="glyph"><span class="char">&#xa8;</span><span class="unicode">00A8</span></div>
+      <div class="glyph"><span class="char">&#xa9;</span><span class="unicode">00A9</span></div>
+      <div class="glyph"><span class="char">&#xaa;</span><span class="unicode">00AA</span></div>
+      <div class="glyph"><span class="char">&#xab;</span><span class="unicode">00AB</span></div>
+      <div class="glyph"><span class="char">&#xac;</span><span class="unicode">00AC</span></div>
+      <div class="glyph"><span class="char">&#xad;</span><span class="unicode">00AD</span></div>
+      <div class="glyph"><span class="char">&#xae;</span><span class="unicode">00AE</span></div>
+      <div class="glyph"><span class="char">&#xaf;</span><span class="unicode">00AF</span></div>
+      <!-- 0xb0 -->
+      <div class="glyph"><span class="char">&#xb0;</span><span class="unicode">00B0</span></div>
+      <div class="glyph"><span class="char">&#xb1;</span><span class="unicode">00B1</span></div>
+      <div class="glyph"><span class="char">&#xb2;</span><span class="unicode">00B2</span></div>
+      <div class="glyph"><span class="char">&#xb3;</span><span class="unicode">00B3</span></div>
+      <div class="glyph"><span class="char">&#xb4;</span><span class="unicode">00B4</span></div>
+      <div class="glyph"><span class="char">&#xb5;</span><span class="unicode">00B5</span></div>
+      <div class="glyph"><span class="char">&#xb6;</span><span class="unicode">00B6</span></div>
+      <div class="glyph"><span class="char">&#xb7;</span><span class="unicode">00B7</span></div>
+      <div class="glyph"><span class="char">&#xb8;</span><span class="unicode">00B8</span></div>
+      <div class="glyph"><span class="char">&#xb9;</span><span class="unicode">00B9</span></div>
+      <div class="glyph"><span class="char">&#xba;</span><span class="unicode">00BA</span></div>
+      <div class="glyph"><span class="char">&#xbb;</span><span class="unicode">00BB</span></div>
+      <div class="glyph"><span class="char">&#xbc;</span><span class="unicode">00BC</span></div>
+      <div class="glyph"><span class="char">&#xbd;</span><span class="unicode">00BD</span></div>
+      <div class="glyph"><span class="char">&#xbe;</span><span class="unicode">00BE</span></div>
+      <div class="glyph"><span class="char">&#xbf;</span><span class="unicode">00BF</span></div>
+      <!-- 0xc0 -->
+      <div class="glyph"><span class="char">&#xc0;</span><span class="unicode">00C0</span></div>
+      <div class="glyph"><span class="char">&#xc1;</span><span class="unicode">00C1</span></div>
+      <div class="glyph"><span class="char">&#xc2;</span><span class="unicode">00C2</span></div>
+      <div class="glyph"><span class="char">&#xc3;</span><span class="unicode">00C3</span></div>
+      <div class="glyph"><span class="char">&#xc4;</span><span class="unicode">00C4</span></div>
+      <div class="glyph"><span class="char">&#xc5;</span><span class="unicode">00C5</span></div>
+      <div class="glyph"><span class="char">&#xc6;</span><span class="unicode">00C6</span></div>
+      <div class="glyph"><span class="char">&#xc7;</span><span class="unicode">00C7</span></div>
+      <div class="glyph"><span class="char">&#xc8;</span><span class="unicode">00C8</span></div>
+      <div class="glyph"><span class="char">&#xc9;</span><span class="unicode">00C9</span></div>
+      <div class="glyph"><span class="char">&#xca;</span><span class="unicode">00CA</span></div>
+      <div class="glyph"><span class="char">&#xcb;</span><span class="unicode">00CB</span></div>
+      <div class="glyph"><span class="char">&#xcc;</span><span class="unicode">00CC</span></div>
+      <div class="glyph"><span class="char">&#xcd;</span><span class="unicode">00CD</span></div>
+      <div class="glyph"><span class="char">&#xce;</span><span class="unicode">00CE</span></div>
+      <div class="glyph"><span class="char">&#xcf;</span><span class="unicode">00CF</span></div>
+      <!-- 0xd0 -->
+      <div class="glyph"><span class="char">&#xd0;</span><span class="unicode">00D0</span></div>
+      <div class="glyph"><span class="char">&#xd1;</span><span class="unicode">00D1</span></div>
+      <div class="glyph"><span class="char">&#xd2;</span><span class="unicode">00D2</span></div>
+      <div class="glyph"><span class="char">&#xd3;</span><span class="unicode">00D3</span></div>
+      <div class="glyph"><span class="char">&#xd4;</span><span class="unicode">00D4</span></div>
+      <div class="glyph"><span class="char">&#xd5;</span><span class="unicode">00D5</span></div>
+      <div class="glyph"><span class="char">&#xd6;</span><span class="unicode">00D6</span></div>
+      <div class="glyph"><span class="char">&#xd7;</span><span class="unicode">00D7</span></div>
+      <div class="glyph"><span class="char">&#xd8;</span><span class="unicode">00D8</span></div>
+      <div class="glyph"><span class="char">&#xd9;</span><span class="unicode">00D9</span></div>
+      <div class="glyph"><span class="char">&#xda;</span><span class="unicode">00DA</span></div>
+      <div class="glyph"><span class="char">&#xdb;</span><span class="unicode">00DB</span></div>
+      <div class="glyph"><span class="char">&#xdc;</span><span class="unicode">00DC</span></div>
+      <div class="glyph"><span class="char">&#xdd;</span><span class="unicode">00DD</span></div>
+      <div class="glyph"><span class="char">&#xde;</span><span class="unicode">00DE</span></div>
+      <div class="glyph"><span class="char">&#xdf;</span><span class="unicode">00DF</span></div>
+      <!-- 0xe0 -->
+      <div class="glyph"><span class="char">&#xe0;</span><span class="unicode">00E0</span></div>
+      <div class="glyph"><span class="char">&#xe1;</span><span class="unicode">00E1</span></div>
+      <div class="glyph"><span class="char">&#xe2;</span><span class="unicode">00E2</span></div>
+      <div class="glyph"><span class="char">&#xe3;</span><span class="unicode">00E3</span></div>
+      <div class="glyph"><span class="char">&#xe4;</span><span class="unicode">00E4</span></div>
+      <div class="glyph"><span class="char">&#xe5;</span><span class="unicode">00E5</span></div>
+      <div class="glyph"><span class="char">&#xe6;</span><span class="unicode">00E6</span></div>
+      <div class="glyph"><span class="char">&#xe7;</span><span class="unicode">00E7</span></div>
+      <div class="glyph"><span class="char">&#xe8;</span><span class="unicode">00E8</span></div>
+      <div class="glyph"><span class="char">&#xe9;</span><span class="unicode">00E9</span></div>
+      <div class="glyph"><span class="char">&#xea;</span><span class="unicode">00EA</span></div>
+      <div class="glyph"><span class="char">&#xeb;</span><span class="unicode">00EB</span></div>
+      <div class="glyph"><span class="char">&#xec;</span><span class="unicode">00EC</span></div>
+      <div class="glyph"><span class="char">&#xed;</span><span class="unicode">00ED</span></div>
+      <div class="glyph"><span class="char">&#xee;</span><span class="unicode">00EE</span></div>
+      <div class="glyph"><span class="char">&#xef;</span><span class="unicode">00EF</span></div>
+      <!-- 0xf0 -->
+      <div class="glyph"><span class="char">&#xf0;</span><span class="unicode">00F0</span></div>
+      <div class="glyph"><span class="char">&#xf1;</span><span class="unicode">00F1</span></div>
+      <div class="glyph"><span class="char">&#xf2;</span><span class="unicode">00F2</span></div>
+      <div class="glyph"><span class="char">&#xf3;</span><span class="unicode">00F3</span></div>
+      <div class="glyph"><span class="char">&#xf4;</span><span class="unicode">00F4</span></div>
+      <div class="glyph"><span class="char">&#xf5;</span><span class="unicode">00F5</span></div>
+      <div class="glyph"><span class="char">&#xf6;</span><span class="unicode">00F6</span></div>
+      <div class="glyph"><span class="char">&#xf7;</span><span class="unicode">00F7</span></div>
+      <div class="glyph"><span class="char">&#xf8;</span><span class="unicode">00F8</span></div>
+      <div class="glyph"><span class="char">&#xf9;</span><span class="unicode">00F9</span></div>
+      <div class="glyph"><span class="char">&#xfa;</span><span class="unicode">00FA</span></div>
+      <div class="glyph"><span class="char">&#xfb;</span><span class="unicode">00FB</span></div>
+      <div class="glyph"><span class="char">&#xfc;</span><span class="unicode">00FC</span></div>
+      <div class="glyph"><span class="char">&#xfd;</span><span class="unicode">00FD</span></div>
+      <div class="glyph"><span class="char">&#xfe;</span><span class="unicode">00FE</span></div>
+      <div class="glyph"><span class="char">&#xff;</span><span class="unicode">00FF</span></div>
+
+      <h2 class="group">Others (Mac Roman & Windows-1252)</h2>
+
+      <div class="glyph"><span class="char">&#x141;</span><span class="unicode">0141</span></div>
+      <div class="glyph"><span class="char">&#x152;</span><span class="unicode">0152</span></div>
+      <div class="glyph"><span class="char">&#x160;</span><span class="unicode">0160</span></div>
+      <div class="glyph"><span class="char">&#x1e9e;</span><span class="unicode">1E9E</span></div>
+      <div class="glyph"><span class="char">&#x178;</span><span class="unicode">0178</span></div>
+      <div class="glyph"><span class="char">&#x17d;</span><span class="unicode">017D</span></div>
+      <div class="glyph"><span class="char">&#x131;</span><span class="unicode">0131</span></div>
+      <div class="glyph"><span class="char">&#x142;</span><span class="unicode">0142</span></div>
+      <div class="glyph"><span class="char">&#x153;</span><span class="unicode">0153</span></div>
+      <div class="glyph"><span class="char">&#x161;</span><span class="unicode">0161</span></div>
+      <div class="glyph"><span class="char">&#x17e;</span><span class="unicode">017E</span></div>
+      <div class="glyph"><span class="char">&#x207f;</span><span class="unicode">207f</span></div>
+      <div class="glyph"><span class="char">&#xfb01;</span><span class="unicode">FB01</span></div>
+      <div class="glyph"><span class="char">&#xfb02;</span><span class="unicode">FB02</span></div>
+
+      <h2 class="group">Greek</h2>
+
+      <div class="glyph"><span class="char">&#x391;</span><span class="unicode">0391</span></div>
+      <div class="glyph"><span class="char">&#x392;</span><span class="unicode">0392</span></div>
+      <div class="glyph"><span class="char">&#x393;</span><span class="unicode">0393</span></div>
+      <div class="glyph"><span class="char">&#x394;</span><span class="unicode">0394</span></div>
+      <div class="glyph"><span class="char">&#x395;</span><span class="unicode">0395</span></div>
+      <div class="glyph"><span class="char">&#x396;</span><span class="unicode">0396</span></div>
+      <div class="glyph"><span class="char">&#x397;</span><span class="unicode">0397</span></div>
+      <div class="glyph"><span class="char">&#x398;</span><span class="unicode">0398</span></div>
+      <div class="glyph"><span class="char">&#x399;</span><span class="unicode">0399</span></div>
+      <div class="glyph"><span class="char">&#x39a;</span><span class="unicode">039a</span></div>
+      <div class="glyph"><span class="char">&#x39b;</span><span class="unicode">039b</span></div>
+      <div class="glyph"><span class="char">&#x39c;</span><span class="unicode">039c</span></div>
+      <div class="glyph"><span class="char">&#x39d;</span><span class="unicode">039d</span></div>
+      <div class="glyph"><span class="char">&#x39e;</span><span class="unicode">039e</span></div>
+      <div class="glyph"><span class="char">&#x39f;</span><span class="unicode">039f</span></div>
+      <div class="glyph"><span class="char">&#x3a0;</span><span class="unicode">03a0</span></div>
+      <div class="glyph"><span class="char">&#x3a1;</span><span class="unicode">03a1</span></div>
+      <div class="glyph"><span class="char">&#x3a3;</span><span class="unicode">03a3</span></div>
+      <div class="glyph"><span class="char">&#x3a4;</span><span class="unicode">03a4</span></div>
+      <div class="glyph"><span class="char">&#x3a5;</span><span class="unicode">03a5</span></div>
+      <div class="glyph"><span class="char">&#x3a6;</span><span class="unicode">03a6</span></div>
+      <div class="glyph"><span class="char">&#x3a7;</span><span class="unicode">03a7</span></div>
+      <div class="glyph"><span class="char">&#x3a8;</span><span class="unicode">03a8</span></div>
+      <div class="glyph"><span class="char">&#x3a9;</span><span class="unicode">03a9</span></div>
+      <div class="glyph"><span class="char">&#x3b1;</span><span class="unicode">03b1</span></div>
+      <div class="glyph"><span class="char">&#x3b2;</span><span class="unicode">03b2</span></div>
+      <div class="glyph"><span class="char">&#x3b3;</span><span class="unicode">03b3</span></div>
+      <div class="glyph"><span class="char">&#x3b4;</span><span class="unicode">03b4</span></div>
+      <div class="glyph"><span class="char">&#x3b5;</span><span class="unicode">03b5</span></div>
+      <div class="glyph"><span class="char">&#x3b6;</span><span class="unicode">03b6</span></div>
+      <div class="glyph"><span class="char">&#x3b7;</span><span class="unicode">03b7</span></div>
+      <div class="glyph"><span class="char">&#x3b8;</span><span class="unicode">03b8</span></div>
+      <div class="glyph"><span class="char">&#x3b9;</span><span class="unicode">03b9</span></div>
+      <div class="glyph"><span class="char">&#x3ba;</span><span class="unicode">03ba</span></div>
+      <div class="glyph"><span class="char">&#x3bb;</span><span class="unicode">03bb</span></div>
+      <div class="glyph"><span class="char">&#x3bd;</span><span class="unicode">03bd</span></div>
+      <div class="glyph"><span class="char">&#x3be;</span><span class="unicode">03be</span></div>
+      <div class="glyph"><span class="char">&#x3bf;</span><span class="unicode">03bf</span></div>
+      <div class="glyph"><span class="char">&#x3c0;</span><span class="unicode">03c0</span></div>
+      <div class="glyph"><span class="char">&#x3c1;</span><span class="unicode">03c1</span></div>
+      <div class="glyph"><span class="char">&#x3c3;</span><span class="unicode">03c3</span></div>
+      <div class="glyph"><span class="char">&#x3c4;</span><span class="unicode">03c4</span></div>
+      <div class="glyph"><span class="char">&#x3c5;</span><span class="unicode">03c5</span></div>
+      <div class="glyph"><span class="char">&#x3c6;</span><span class="unicode">03c6</span></div>
+      <div class="glyph"><span class="char">&#x3c7;</span><span class="unicode">03c7</span></div>
+      <div class="glyph"><span class="char">&#x3c8;</span><span class="unicode">03c8</span></div>
+      <div class="glyph"><span class="char">&#x3c9;</span><span class="unicode">03c9</span></div>
+
+      <h2 class="group">Cyrillic</h2>
+
+      <div class="glyph"><span class="char">&#x410;</span><span class="unicode">0410</span></div>
+      <div class="glyph"><span class="char">&#x411;</span><span class="unicode">0411</span></div>
+      <div class="glyph"><span class="char">&#x412;</span><span class="unicode">0412</span></div>
+      <div class="glyph"><span class="char">&#x413;</span><span class="unicode">0413</span></div>
+      <div class="glyph"><span class="char">&#x414;</span><span class="unicode">0414</span></div>
+      <div class="glyph"><span class="char">&#x415;</span><span class="unicode">0415</span></div>
+      <div class="glyph"><span class="char">&#x416;</span><span class="unicode">0416</span></div>
+      <div class="glyph"><span class="char">&#x417;</span><span class="unicode">0417</span></div>
+      <div class="glyph"><span class="char">&#x418;</span><span class="unicode">0418</span></div>
+      <div class="glyph"><span class="char">&#x419;</span><span class="unicode">0419</span></div>
+      <div class="glyph"><span class="char">&#x41a;</span><span class="unicode">041a</span></div>
+      <div class="glyph"><span class="char">&#x41b;</span><span class="unicode">041b</span></div>
+      <div class="glyph"><span class="char">&#x41c;</span><span class="unicode">041c</span></div>
+      <div class="glyph"><span class="char">&#x41d;</span><span class="unicode">041d</span></div>
+      <div class="glyph"><span class="char">&#x41e;</span><span class="unicode">041e</span></div>
+      <div class="glyph"><span class="char">&#x41f;</span><span class="unicode">041f</span></div>
+      <div class="glyph"><span class="char">&#x420;</span><span class="unicode">0420</span></div>
+      <div class="glyph"><span class="char">&#x421;</span><span class="unicode">0421</span></div>
+      <div class="glyph"><span class="char">&#x422;</span><span class="unicode">0422</span></div>
+      <div class="glyph"><span class="char">&#x423;</span><span class="unicode">0423</span></div>
+      <div class="glyph"><span class="char">&#x424;</span><span class="unicode">0424</span></div>
+      <div class="glyph"><span class="char">&#x425;</span><span class="unicode">0425</span></div>
+      <div class="glyph"><span class="char">&#x426;</span><span class="unicode">0426</span></div>
+      <div class="glyph"><span class="char">&#x427;</span><span class="unicode">0427</span></div>
+      <div class="glyph"><span class="char">&#x428;</span><span class="unicode">0428</span></div>
+      <div class="glyph"><span class="char">&#x429;</span><span class="unicode">0429</span></div>
+      <div class="glyph"><span class="char">&#x42a;</span><span class="unicode">042a</span></div>
+      <div class="glyph"><span class="char">&#x42b;</span><span class="unicode">042b</span></div>
+      <div class="glyph"><span class="char">&#x42c;</span><span class="unicode">042c</span></div>
+      <div class="glyph"><span class="char">&#x42d;</span><span class="unicode">042d</span></div>
+      <div class="glyph"><span class="char">&#x42e;</span><span class="unicode">042e</span></div>
+      <div class="glyph"><span class="char">&#x42f;</span><span class="unicode">042f</span></div>
+      <div class="glyph"><span class="char">&#x430;</span><span class="unicode">0430</span></div>
+      <div class="glyph"><span class="char">&#x431;</span><span class="unicode">0431</span></div>
+      <div class="glyph"><span class="char">&#x432;</span><span class="unicode">0432</span></div>
+      <div class="glyph"><span class="char">&#x433;</span><span class="unicode">0433</span></div>
+      <div class="glyph"><span class="char">&#x434;</span><span class="unicode">0434</span></div>
+      <div class="glyph"><span class="char">&#x435;</span><span class="unicode">0435</span></div>
+      <div class="glyph"><span class="char">&#x436;</span><span class="unicode">0436</span></div>
+      <div class="glyph"><span class="char">&#x437;</span><span class="unicode">0437</span></div>
+      <div class="glyph"><span class="char">&#x438;</span><span class="unicode">0438</span></div>
+      <div class="glyph"><span class="char">&#x439;</span><span class="unicode">0439</span></div>
+      <div class="glyph"><span class="char">&#x43a;</span><span class="unicode">043a</span></div>
+      <div class="glyph"><span class="char">&#x43b;</span><span class="unicode">043b</span></div>
+      <div class="glyph"><span class="char">&#x43c;</span><span class="unicode">043c</span></div>
+      <div class="glyph"><span class="char">&#x43d;</span><span class="unicode">043d</span></div>
+      <div class="glyph"><span class="char">&#x43e;</span><span class="unicode">043e</span></div>
+      <div class="glyph"><span class="char">&#x43f;</span><span class="unicode">043f</span></div>
+      <div class="glyph"><span class="char">&#x440;</span><span class="unicode">0440</span></div>
+      <div class="glyph"><span class="char">&#x441;</span><span class="unicode">0441</span></div>
+      <div class="glyph"><span class="char">&#x442;</span><span class="unicode">0442</span></div>
+      <div class="glyph"><span class="char">&#x443;</span><span class="unicode">0443</span></div>
+      <div class="glyph"><span class="char">&#x444;</span><span class="unicode">0444</span></div>
+      <div class="glyph"><span class="char">&#x445;</span><span class="unicode">0445</span></div>
+      <div class="glyph"><span class="char">&#x446;</span><span class="unicode">0446</span></div>
+      <div class="glyph"><span class="char">&#x447;</span><span class="unicode">0447</span></div>
+      <div class="glyph"><span class="char">&#x448;</span><span class="unicode">0448</span></div>
+      <div class="glyph"><span class="char">&#x449;</span><span class="unicode">0449</span></div>
+      <div class="glyph"><span class="char">&#x44a;</span><span class="unicode">044a</span></div>
+      <div class="glyph"><span class="char">&#x44b;</span><span class="unicode">044b</span></div>
+      <div class="glyph"><span class="char">&#x44c;</span><span class="unicode">044c</span></div>
+      <div class="glyph"><span class="char">&#x44d;</span><span class="unicode">044d</span></div>
+      <div class="glyph"><span class="char">&#x44e;</span><span class="unicode">044e</span></div>
+      <div class="glyph"><span class="char">&#x44f;</span><span class="unicode">044f</span></div>
+      <div class="glyph"><span class="char">&#x401;</span><span class="unicode">0401</span></div>
+      <div class="glyph"><span class="char">&#x451;</span><span class="unicode">0451</span></div>
+
+      <h2 class="group">Hebrew</h2>
+
+      <div class="glyph"><span class="char">&#x5d0;</span><span class="unicode">05d0</span></div>
+      <div class="glyph"><span class="char">&#x5d1;</span><span class="unicode">05d1</span></div>
+      <div class="glyph"><span class="char">&#x5d2;</span><span class="unicode">05d2</span></div>
+      <div class="glyph"><span class="char">&#x5d3;</span><span class="unicode">05d3</span></div>
+      <div class="glyph"><span class="char">&#x5d4;</span><span class="unicode">05d4</span></div>
+      <div class="glyph"><span class="char">&#x5d5;</span><span class="unicode">05d5</span></div>
+      <div class="glyph"><span class="char">&#x5d6;</span><span class="unicode">05d6</span></div>
+      <div class="glyph"><span class="char">&#x5d7;</span><span class="unicode">05d7</span></div>
+      <div class="glyph"><span class="char">&#x5d8;</span><span class="unicode">05d8</span></div>
+      <div class="glyph"><span class="char">&#x5d9;</span><span class="unicode">05d9</span></div>
+      <div class="glyph"><span class="char">&#x5da;</span><span class="unicode">05da</span></div>
+      <div class="glyph"><span class="char">&#x5db;</span><span class="unicode">05db</span></div>
+      <div class="glyph"><span class="char">&#x5dc;</span><span class="unicode">05dc</span></div>
+      <div class="glyph"><span class="char">&#x5dd;</span><span class="unicode">05dd</span></div>
+      <div class="glyph"><span class="char">&#x5de;</span><span class="unicode">05de</span></div>
+      <div class="glyph"><span class="char">&#x5df;</span><span class="unicode">05df</span></div>
+      <div class="glyph"><span class="char">&#x5e0;</span><span class="unicode">05e0</span></div>
+      <div class="glyph"><span class="char">&#x5e1;</span><span class="unicode">05e1</span></div>
+      <div class="glyph"><span class="char">&#x5e2;</span><span class="unicode">05e2</span></div>
+      <div class="glyph"><span class="char">&#x5e3;</span><span class="unicode">05e3</span></div>
+      <div class="glyph"><span class="char">&#x5e4;</span><span class="unicode">05e4</span></div>
+      <div class="glyph"><span class="char">&#x5e5;</span><span class="unicode">05e5</span></div>
+      <div class="glyph"><span class="char">&#x5e6;</span><span class="unicode">05e6</span></div>
+      <div class="glyph"><span class="char">&#x5e7;</span><span class="unicode">05e7</span></div>
+      <div class="glyph"><span class="char">&#x5e8;</span><span class="unicode">05e8</span></div>
+      <div class="glyph"><span class="char">&#x5e9;</span><span class="unicode">05e9</span></div>
+      <div class="glyph"><span class="char">&#x5ea;</span><span class="unicode">05ea</span></div>
+
+      <h2 class="group">Punctuation</h2>
+
+      <div class="glyph"><span class="char">&#x2026;</span><span class="unicode">2026</span></div>
+      <div class="glyph"><span class="char">&#x2022;</span><span class="unicode">2022</span></div>
+      <div class="glyph"><span class="char">&#x2013;</span><span class="unicode">2013</span></div>
+      <div class="glyph"><span class="char">&#x2014;</span><span class="unicode">2014</span></div>
+      <div class="glyph"><span class="char">&#x201a;</span><span class="unicode">201A</span></div>
+      <div class="glyph"><span class="char">&#x201e;</span><span class="unicode">201E</span></div>
+      <div class="glyph"><span class="char">&#x201c;</span><span class="unicode">201C</span></div>
+      <div class="glyph"><span class="char">&#x201d;</span><span class="unicode">201D</span></div>
+      <div class="glyph"><span class="char">&#x2018;</span><span class="unicode">2018</span></div>
+      <div class="glyph"><span class="char">&#x2019;</span><span class="unicode">2019</span></div>
+      <div class="glyph"><span class="char">&#x2039;</span><span class="unicode">2039</span></div>
+      <div class="glyph"><span class="char">&#x203a;</span><span class="unicode">203A</span></div>
+      <div class="glyph"><span class="char">&#x203c;</span><span class="unicode">203c</span></div>
+      <div class="glyph"><span class="char">&#x2044;</span><span class="unicode">2044</span></div>
+
+      <h2 class="group">Modifiers and Diacritics</h2>
+
+      <div class="glyph"><span class="char">&#x02dd;</span><span class="unicode">02DD</span></div>
+      <div class="glyph"><span class="char">&#x02c6;</span><span class="unicode">02C6</span></div>
+      <div class="glyph"><span class="char">&#x02c7;</span><span class="unicode">02C7</span></div>
+      <div class="glyph"><span class="char">&#x02d8;</span><span class="unicode">02D8</span></div>
+      <div class="glyph"><span class="char">&#x02da;</span><span class="unicode">02DA</span></div>
+      <div class="glyph"><span class="char">&#x02dc;</span><span class="unicode">02DC</span></div>
+      <div class="glyph"><span class="char">&#x02db;</span><span class="unicode">02DB</span></div>
+
+      <h2 class="group">Hiragana</h2>
+
+      <!-- 0x3040 -->
+      <div class="glyph"><span class="char">&#x3041;</span><span class="unicode">3041</span></div>
+      <div class="glyph"><span class="char">&#x3042;</span><span class="unicode">3042</span></div>
+      <div class="glyph"><span class="char">&#x3043;</span><span class="unicode">3043</span></div>
+      <div class="glyph"><span class="char">&#x3044;</span><span class="unicode">3044</span></div>
+      <div class="glyph"><span class="char">&#x3045;</span><span class="unicode">3045</span></div>
+      <div class="glyph"><span class="char">&#x3046;</span><span class="unicode">3046</span></div>
+      <div class="glyph"><span class="char">&#x3047;</span><span class="unicode">3047</span></div>
+      <div class="glyph"><span class="char">&#x3048;</span><span class="unicode">3048</span></div>
+      <div class="glyph"><span class="char">&#x3049;</span><span class="unicode">3049</span></div>
+      <div class="glyph"><span class="char">&#x304a;</span><span class="unicode">304A</span></div>
+      <div class="glyph"><span class="char">&#x304b;</span><span class="unicode">304B</span></div>
+      <div class="glyph"><span class="char">&#x304c;</span><span class="unicode">304C</span></div>
+      <div class="glyph"><span class="char">&#x304d;</span><span class="unicode">304D</span></div>
+      <div class="glyph"><span class="char">&#x304e;</span><span class="unicode">304E</span></div>
+      <div class="glyph"><span class="char">&#x304f;</span><span class="unicode">304F</span></div>
+      <!-- 0x3050 -->
+      <div class="glyph"><span class="char">&#x3050;</span><span class="unicode">3050</span></div>
+      <div class="glyph"><span class="char">&#x3051;</span><span class="unicode">3051</span></div>
+      <div class="glyph"><span class="char">&#x3052;</span><span class="unicode">3052</span></div>
+      <div class="glyph"><span class="char">&#x3053;</span><span class="unicode">3053</span></div>
+      <div class="glyph"><span class="char">&#x3054;</span><span class="unicode">3054</span></div>
+      <div class="glyph"><span class="char">&#x3055;</span><span class="unicode">3055</span></div>
+      <div class="glyph"><span class="char">&#x3056;</span><span class="unicode">3056</span></div>
+      <div class="glyph"><span class="char">&#x3057;</span><span class="unicode">3057</span></div>
+      <div class="glyph"><span class="char">&#x3058;</span><span class="unicode">3058</span></div>
+      <div class="glyph"><span class="char">&#x3059;</span><span class="unicode">3059</span></div>
+      <div class="glyph"><span class="char">&#x305a;</span><span class="unicode">305A</span></div>
+      <div class="glyph"><span class="char">&#x305b;</span><span class="unicode">305B</span></div>
+      <div class="glyph"><span class="char">&#x305c;</span><span class="unicode">305C</span></div>
+      <div class="glyph"><span class="char">&#x305d;</span><span class="unicode">305D</span></div>
+      <div class="glyph"><span class="char">&#x305e;</span><span class="unicode">305E</span></div>
+      <div class="glyph"><span class="char">&#x305f;</span><span class="unicode">305F</span></div>
+      <!-- 0x3060 -->
+      <div class="glyph"><span class="char">&#x3060;</span><span class="unicode">3060</span></div>
+      <div class="glyph"><span class="char">&#x3061;</span><span class="unicode">3061</span></div>
+      <div class="glyph"><span class="char">&#x3062;</span><span class="unicode">3062</span></div>
+      <div class="glyph"><span class="char">&#x3063;</span><span class="unicode">3063</span></div>
+      <div class="glyph"><span class="char">&#x3064;</span><span class="unicode">3064</span></div>
+      <div class="glyph"><span class="char">&#x3065;</span><span class="unicode">3065</span></div>
+      <div class="glyph"><span class="char">&#x3066;</span><span class="unicode">3066</span></div>
+      <div class="glyph"><span class="char">&#x3067;</span><span class="unicode">3067</span></div>
+      <div class="glyph"><span class="char">&#x3068;</span><span class="unicode">3068</span></div>
+      <div class="glyph"><span class="char">&#x3069;</span><span class="unicode">3069</span></div>
+      <div class="glyph"><span class="char">&#x306a;</span><span class="unicode">306A</span></div>
+      <div class="glyph"><span class="char">&#x306b;</span><span class="unicode">306B</span></div>
+      <div class="glyph"><span class="char">&#x306c;</span><span class="unicode">306C</span></div>
+      <div class="glyph"><span class="char">&#x306d;</span><span class="unicode">306D</span></div>
+      <div class="glyph"><span class="char">&#x306e;</span><span class="unicode">306E</span></div>
+      <div class="glyph"><span class="char">&#x306f;</span><span class="unicode">306F</span></div>
+      <!-- 0x3070 -->
+      <div class="glyph"><span class="char">&#x3070;</span><span class="unicode">3070</span></div>
+      <div class="glyph"><span class="char">&#x3071;</span><span class="unicode">3071</span></div>
+      <div class="glyph"><span class="char">&#x3072;</span><span class="unicode">3072</span></div>
+      <div class="glyph"><span class="char">&#x3073;</span><span class="unicode">3073</span></div>
+      <div class="glyph"><span class="char">&#x3074;</span><span class="unicode">3074</span></div>
+      <div class="glyph"><span class="char">&#x3075;</span><span class="unicode">3075</span></div>
+      <div class="glyph"><span class="char">&#x3076;</span><span class="unicode">3076</span></div>
+      <div class="glyph"><span class="char">&#x3077;</span><span class="unicode">3077</span></div>
+      <div class="glyph"><span class="char">&#x3078;</span><span class="unicode">3078</span></div>
+      <div class="glyph"><span class="char">&#x3079;</span><span class="unicode">3079</span></div>
+      <div class="glyph"><span class="char">&#x307a;</span><span class="unicode">307A</span></div>
+      <div class="glyph"><span class="char">&#x307b;</span><span class="unicode">307B</span></div>
+      <div class="glyph"><span class="char">&#x307c;</span><span class="unicode">307C</span></div>
+      <div class="glyph"><span class="char">&#x307d;</span><span class="unicode">307D</span></div>
+      <div class="glyph"><span class="char">&#x307e;</span><span class="unicode">307E</span></div>
+      <div class="glyph"><span class="char">&#x307f;</span><span class="unicode">307F</span></div>
+      <!-- 0x3080 -->
+      <div class="glyph"><span class="char">&#x3080;</span><span class="unicode">3080</span></div>
+      <div class="glyph"><span class="char">&#x3081;</span><span class="unicode">3081</span></div>
+      <div class="glyph"><span class="char">&#x3082;</span><span class="unicode">3082</span></div>
+      <div class="glyph"><span class="char">&#x3083;</span><span class="unicode">3083</span></div>
+      <div class="glyph"><span class="char">&#x3084;</span><span class="unicode">3084</span></div>
+      <div class="glyph"><span class="char">&#x3085;</span><span class="unicode">3085</span></div>
+      <div class="glyph"><span class="char">&#x3086;</span><span class="unicode">3086</span></div>
+      <div class="glyph"><span class="char">&#x3087;</span><span class="unicode">3087</span></div>
+      <div class="glyph"><span class="char">&#x3088;</span><span class="unicode">3088</span></div>
+      <div class="glyph"><span class="char">&#x3089;</span><span class="unicode">3089</span></div>
+      <div class="glyph"><span class="char">&#x308a;</span><span class="unicode">308A</span></div>
+      <div class="glyph"><span class="char">&#x308b;</span><span class="unicode">308B</span></div>
+      <div class="glyph"><span class="char">&#x308c;</span><span class="unicode">308C</span></div>
+      <div class="glyph"><span class="char">&#x308d;</span><span class="unicode">308D</span></div>
+      <div class="glyph"><span class="char">&#x308e;</span><span class="unicode">308E</span></div>
+      <div class="glyph"><span class="char">&#x308f;</span><span class="unicode">308F</span></div>
+      <!-- 0x3090 -->
+      <div class="glyph"><span class="char">&#x3090;</span><span class="unicode">3090</span></div>
+      <div class="glyph"><span class="char">&#x3091;</span><span class="unicode">3091</span></div>
+      <div class="glyph"><span class="char">&#x3092;</span><span class="unicode">3092</span></div>
+      <div class="glyph"><span class="char">&#x3093;</span><span class="unicode">3093</span></div>
+      <div class="glyph"><span class="char">&#x3094;</span><span class="unicode">3094</span></div>
+      <div class="glyph"><span class="char">&#x3099;</span><span class="unicode">3099</span></div>
+      <div class="glyph"><span class="char">&#x309a;</span><span class="unicode">309A</span></div>
+      <div class="glyph"><span class="char">&#x309d;</span><span class="unicode">309D</span></div>
+      <div class="glyph"><span class="char">&#x309e;</span><span class="unicode">309E</span></div>
+
+      <h2 class="group">Katakana</h2>
+
+      <!-- 0x30a0 -->
+      <div class="glyph"><span class="char">&#x30a1;</span><span class="unicode">30A1</span></div>
+      <div class="glyph"><span class="char">&#x30a2;</span><span class="unicode">30A2</span></div>
+      <div class="glyph"><span class="char">&#x30a3;</span><span class="unicode">30A3</span></div>
+      <div class="glyph"><span class="char">&#x30a4;</span><span class="unicode">30A4</span></div>
+      <div class="glyph"><span class="char">&#x30a5;</span><span class="unicode">30A5</span></div>
+      <div class="glyph"><span class="char">&#x30a6;</span><span class="unicode">30A6</span></div>
+      <div class="glyph"><span class="char">&#x30a7;</span><span class="unicode">30A7</span></div>
+      <div class="glyph"><span class="char">&#x30a8;</span><span class="unicode">30A8</span></div>
+      <div class="glyph"><span class="char">&#x30a9;</span><span class="unicode">30A9</span></div>
+      <div class="glyph"><span class="char">&#x30aa;</span><span class="unicode">30AA</span></div>
+      <div class="glyph"><span class="char">&#x30ab;</span><span class="unicode">30AB</span></div>
+      <div class="glyph"><span class="char">&#x30ac;</span><span class="unicode">30AC</span></div>
+      <div class="glyph"><span class="char">&#x30ad;</span><span class="unicode">30AD</span></div>
+      <div class="glyph"><span class="char">&#x30ae;</span><span class="unicode">30AE</span></div>
+      <div class="glyph"><span class="char">&#x30af;</span><span class="unicode">30AF</span></div>
+      <!-- 0x30b0 -->
+      <div class="glyph"><span class="char">&#x30b0;</span><span class="unicode">30B0</span></div>
+      <div class="glyph"><span class="char">&#x30b1;</span><span class="unicode">30B1</span></div>
+      <div class="glyph"><span class="char">&#x30b2;</span><span class="unicode">30B2</span></div>
+      <div class="glyph"><span class="char">&#x30b3;</span><span class="unicode">30B3</span></div>
+      <div class="glyph"><span class="char">&#x30b4;</span><span class="unicode">30B4</span></div>
+      <div class="glyph"><span class="char">&#x30b5;</span><span class="unicode">30B5</span></div>
+      <div class="glyph"><span class="char">&#x30b6;</span><span class="unicode">30B6</span></div>
+      <div class="glyph"><span class="char">&#x30b7;</span><span class="unicode">30B7</span></div>
+      <div class="glyph"><span class="char">&#x30b8;</span><span class="unicode">30B8</span></div>
+      <div class="glyph"><span class="char">&#x30b9;</span><span class="unicode">30B9</span></div>
+      <div class="glyph"><span class="char">&#x30ba;</span><span class="unicode">30BA</span></div>
+      <div class="glyph"><span class="char">&#x30bb;</span><span class="unicode">30BB</span></div>
+      <div class="glyph"><span class="char">&#x30bc;</span><span class="unicode">30BC</span></div>
+      <div class="glyph"><span class="char">&#x30bd;</span><span class="unicode">30BD</span></div>
+      <div class="glyph"><span class="char">&#x30be;</span><span class="unicode">30BE</span></div>
+      <div class="glyph"><span class="char">&#x30bf;</span><span class="unicode">30BF</span></div>
+      <!-- 0x30c0 -->
+      <div class="glyph"><span class="char">&#x30c0;</span><span class="unicode">30C0</span></div>
+      <div class="glyph"><span class="char">&#x30c1;</span><span class="unicode">30C1</span></div>
+      <div class="glyph"><span class="char">&#x30c2;</span><span class="unicode">30C2</span></div>
+      <div class="glyph"><span class="char">&#x30c3;</span><span class="unicode">30C3</span></div>
+      <div class="glyph"><span class="char">&#x30c4;</span><span class="unicode">30C4</span></div>
+      <div class="glyph"><span class="char">&#x30c5;</span><span class="unicode">30C5</span></div>
+      <div class="glyph"><span class="char">&#x30c6;</span><span class="unicode">30C6</span></div>
+      <div class="glyph"><span class="char">&#x30c7;</span><span class="unicode">30C7</span></div>
+      <div class="glyph"><span class="char">&#x30c8;</span><span class="unicode">30C8</span></div>
+      <div class="glyph"><span class="char">&#x30c9;</span><span class="unicode">30C9</span></div>
+      <div class="glyph"><span class="char">&#x30ca;</span><span class="unicode">30CA</span></div>
+      <div class="glyph"><span class="char">&#x30cb;</span><span class="unicode">30CB</span></div>
+      <div class="glyph"><span class="char">&#x30cc;</span><span class="unicode">30CC</span></div>
+      <div class="glyph"><span class="char">&#x30cd;</span><span class="unicode">30CD</span></div>
+      <div class="glyph"><span class="char">&#x30ce;</span><span class="unicode">30CE</span></div>
+      <div class="glyph"><span class="char">&#x30cf;</span><span class="unicode">30CF</span></div>
+      <!-- 0x30d0 -->
+      <div class="glyph"><span class="char">&#x30d0;</span><span class="unicode">30C0</span></div>
+      <div class="glyph"><span class="char">&#x30d1;</span><span class="unicode">30C1</span></div>
+      <div class="glyph"><span class="char">&#x30d2;</span><span class="unicode">30C2</span></div>
+      <div class="glyph"><span class="char">&#x30d3;</span><span class="unicode">30C3</span></div>
+      <div class="glyph"><span class="char">&#x30d4;</span><span class="unicode">30C4</span></div>
+      <div class="glyph"><span class="char">&#x30d5;</span><span class="unicode">30C5</span></div>
+      <div class="glyph"><span class="char">&#x30d6;</span><span class="unicode">30C6</span></div>
+      <div class="glyph"><span class="char">&#x30d7;</span><span class="unicode">30C7</span></div>
+      <div class="glyph"><span class="char">&#x30d8;</span><span class="unicode">30C8</span></div>
+      <div class="glyph"><span class="char">&#x30d9;</span><span class="unicode">30C9</span></div>
+      <div class="glyph"><span class="char">&#x30da;</span><span class="unicode">30CA</span></div>
+      <div class="glyph"><span class="char">&#x30db;</span><span class="unicode">30CB</span></div>
+      <div class="glyph"><span class="char">&#x30dc;</span><span class="unicode">30CC</span></div>
+      <div class="glyph"><span class="char">&#x30dd;</span><span class="unicode">30CD</span></div>
+      <div class="glyph"><span class="char">&#x30de;</span><span class="unicode">30CE</span></div>
+      <div class="glyph"><span class="char">&#x30df;</span><span class="unicode">30CF</span></div>
+      <!-- 0x30e0 -->
+      <div class="glyph"><span class="char">&#x30e0;</span><span class="unicode">30E0</span></div>
+      <div class="glyph"><span class="char">&#x30e1;</span><span class="unicode">30E1</span></div>
+      <div class="glyph"><span class="char">&#x30e2;</span><span class="unicode">30E2</span></div>
+      <div class="glyph"><span class="char">&#x30e3;</span><span class="unicode">30E3</span></div>
+      <div class="glyph"><span class="char">&#x30e4;</span><span class="unicode">30E4</span></div>
+      <div class="glyph"><span class="char">&#x30e5;</span><span class="unicode">30E5</span></div>
+      <div class="glyph"><span class="char">&#x30e6;</span><span class="unicode">30E6</span></div>
+      <div class="glyph"><span class="char">&#x30e7;</span><span class="unicode">30E7</span></div>
+      <div class="glyph"><span class="char">&#x30e8;</span><span class="unicode">30E8</span></div>
+      <div class="glyph"><span class="char">&#x30e9;</span><span class="unicode">30E9</span></div>
+      <div class="glyph"><span class="char">&#x30ea;</span><span class="unicode">30EA</span></div>
+      <div class="glyph"><span class="char">&#x30eb;</span><span class="unicode">30EB</span></div>
+      <div class="glyph"><span class="char">&#x30ec;</span><span class="unicode">30EC</span></div>
+      <div class="glyph"><span class="char">&#x30ed;</span><span class="unicode">30ED</span></div>
+      <div class="glyph"><span class="char">&#x30ee;</span><span class="unicode">30EE</span></div>
+      <div class="glyph"><span class="char">&#x30ef;</span><span class="unicode">30EF</span></div>
+      <!-- 0x30f0 -->
+      <div class="glyph"><span class="char">&#x30f0;</span><span class="unicode">30F0</span></div>
+      <div class="glyph"><span class="char">&#x30f1;</span><span class="unicode">30F1</span></div>
+      <div class="glyph"><span class="char">&#x30f2;</span><span class="unicode">30F2</span></div>
+      <div class="glyph"><span class="char">&#x30f3;</span><span class="unicode">30F3</span></div>
+      <div class="glyph"><span class="char">&#x30f4;</span><span class="unicode">30F4</span></div>
+      <div class="glyph"><span class="char">&#x30f5;</span><span class="unicode">30F5</span></div>
+      <div class="glyph"><span class="char">&#x30f6;</span><span class="unicode">30F6</span></div>
+      <div class="glyph"><span class="char">&#x30f7;</span><span class="unicode">30F7</span></div>
+      <div class="glyph"><span class="char">&#x30f8;</span><span class="unicode">30F8</span></div>
+      <div class="glyph"><span class="char">&#x30f9;</span><span class="unicode">30F9</span></div>
+      <div class="glyph"><span class="char">&#x30fa;</span><span class="unicode">30FA</span></div>
+      <div class="glyph"><span class="char">&#x30fb;</span><span class="unicode">30FB</span></div>
+      <div class="glyph"><span class="char">&#x30fc;</span><span class="unicode">30FC</span></div>
+      <div class="glyph"><span class="char">&#x30fd;</span><span class="unicode">30FD</span></div>
+
+      <h2 class="group">Symbols</h2>
+
+      <div class="glyph"><span class="char">&#x192;</span><span class="unicode">0192</span></div>
+      <div class="glyph"><span class="char">&#x266a;</span><span class="unicode">266a</span></div>
+      <div class="glyph"><span class="char">&#x266b;</span><span class="unicode">266b</span></div>
+      <div class="glyph"><span class="char">&#x263a;</span><span class="unicode">263a</span></div>
+      <div class="glyph"><span class="char">&#x263b;</span><span class="unicode">263b</span></div>
+      <div class="glyph"><span class="char">&#x263c;</span><span class="unicode">263c</span></div>
+      <div class="glyph"><span class="char">&#x2640;</span><span class="unicode">2640</span></div>
+      <div class="glyph"><span class="char">&#x2642;</span><span class="unicode">2642</span></div>
+      <div class="glyph"><span class="char">&#x2660;</span><span class="unicode">2660</span></div>
+      <div class="glyph"><span class="char">&#x2663;</span><span class="unicode">2663</span></div>
+      <div class="glyph"><span class="char">&#x2665;</span><span class="unicode">2665</span></div>
+      <div class="glyph"><span class="char">&#x2666;</span><span class="unicode">2666</span></div>
+      <div class="glyph"><span class="char">&#x2122;</span><span class="unicode">2112</span></div>
+      <div class="glyph"><span class="char">&#x2020;</span><span class="unicode">2020</span></div>
+      <div class="glyph"><span class="char">&#x2021;</span><span class="unicode">2021</span></div>
+      <div class="glyph"><span class="char">&#x2302;</span><span class="unicode">2302</span></div>
+      <div class="glyph"><span class="char">&#x20ac;</span><span class="unicode">20ac</span></div>
+      <div class="glyph"><span class="char">&#x20a7;</span><span class="unicode">20a7</span></div>
+      <div class="glyph"><span class="char">&#x2261;</span><span class="unicode">2261</span></div>
+      <div class="glyph"><span class="char">&#x2321;</span><span class="unicode">2321</span></div>
+      <div class="glyph"><span class="char">&#x2320;</span><span class="unicode">2320</span></div>
+      <div class="glyph"><span class="char">&#x2212;</span><span class="unicode">2212</span></div>
+      <div class="glyph"><span class="char">&#x2260;</span><span class="unicode">2260</span></div>
+      <div class="glyph"><span class="char">&#x2265;</span><span class="unicode">2265</span></div>
+      <div class="glyph"><span class="char">&#x2264;</span><span class="unicode">2264</span></div>
+      <div class="glyph"><span class="char">&#x2248;</span><span class="unicode">2248</span></div>
+      <div class="glyph"><span class="char">&#x221e;</span><span class="unicode">221e</span></div>
+      <div class="glyph"><span class="char">&#x2229;</span><span class="unicode">2229</span></div>
+      <div class="glyph"><span class="char">&#x222b;</span><span class="unicode">222b</span></div>
+      <div class="glyph"><span class="char">&#x220f;</span><span class="unicode">220f</span></div>
+      <div class="glyph"><span class="char">&#x2211;</span><span class="unicode">2211</span></div>
+      <div class="glyph"><span class="char">&#x221a;</span><span class="unicode">221a</span></div>
+      <div class="glyph"><span class="char">&#x2202;</span><span class="unicode">2202</span></div>
+      <div class="glyph"><span class="char">&#x221f;</span><span class="unicode">221f</span></div>
+      <div class="glyph"><span class="char">&#x2030;</span><span class="unicode">2030</span></div>
+      <div class="glyph"><span class="char">&#x2310;</span><span class="unicode">2310</span></div>
+      <div class="glyph"><span class="char">&#x2219;</span><span class="unicode">2219</span></div>
+      <div class="glyph"><span class="char">&#x2191;</span><span class="unicode">2191</span></div>
+      <div class="glyph"><span class="char">&#x2197;</span><span class="unicode">2197</span></div>
+      <div class="glyph"><span class="char">&#x2192;</span><span class="unicode">2192</span></div>
+      <div class="glyph"><span class="char">&#x2198;</span><span class="unicode">2198</span></div>
+      <div class="glyph"><span class="char">&#x2193;</span><span class="unicode">2193</span></div>
+      <div class="glyph"><span class="char">&#x2199;</span><span class="unicode">2199</span></div>
+      <div class="glyph"><span class="char">&#x2190;</span><span class="unicode">2190</span></div>
+      <div class="glyph"><span class="char">&#x2196;</span><span class="unicode">2196</span></div>
+      <div class="glyph"><span class="char">&#x2194;</span><span class="unicode">2194</span></div>
+      <div class="glyph"><span class="char">&#x2195;</span><span class="unicode">2195</span></div>
+      <div class="glyph"><span class="char">&#x21a8;</span><span class="unicode">21a8</span></div>
+
+      <div class="glyph"><span class="char">&#x2584;</span><span class="unicode">2584</span></div>
+      <div class="glyph"><span class="char">&#x2588;</span><span class="unicode">2588</span></div>
+      <div class="glyph"><span class="char">&#x2580;</span><span class="unicode">2580</span></div>
+      <div class="glyph"><span class="char">&#x258c;</span><span class="unicode">258c</span></div>
+      <div class="glyph"><span class="char">&#x2590;</span><span class="unicode">2590</span></div>
+      <div class="glyph"><span class="char">&#x2591;</span><span class="unicode">2591</span></div>
+      <div class="glyph"><span class="char">&#x2592;</span><span class="unicode">2592</span></div>
+      <div class="glyph"><span class="char">&#x2593;</span><span class="unicode">2593</span></div>
+      <div class="glyph"><span class="char">&#x25cb;</span><span class="unicode">25cb</span></div>
+      <div class="glyph"><span class="char">&#x25cc;</span><span class="unicode">25cc</span></div>
+      <div class="glyph"><span class="char">&#x25d8;</span><span class="unicode">25d8</span></div>
+      <div class="glyph"><span class="char">&#x25d9;</span><span class="unicode">25d9</span></div>
+      <div class="glyph"><span class="char">&#x25ca;</span><span class="unicode">25ca</span></div>
+      <div class="glyph"><span class="char">&#x25ac;</span><span class="unicode">25ac</span></div>
+      <div class="glyph"><span class="char">&#x250c;</span><span class="unicode">250c</span></div>
+      <div class="glyph"><span class="char">&#x2514;</span><span class="unicode">2514</span></div>
+      <div class="glyph"><span class="char">&#x2510;</span><span class="unicode">2510</span></div>
+      <div class="glyph"><span class="char">&#x2518;</span><span class="unicode">2518</span></div>
+      <div class="glyph"><span class="char">&#x253c;</span><span class="unicode">253c</span></div>
+      <div class="glyph"><span class="char">&#x252c;</span><span class="unicode">252c</span></div>
+      <div class="glyph"><span class="char">&#x2534;</span><span class="unicode">2534</span></div>
+      <div class="glyph"><span class="char">&#x251c;</span><span class="unicode">251c</span></div>
+      <div class="glyph"><span class="char">&#x2524;</span><span class="unicode">2524</span></div>
+      <div class="glyph"><span class="char">&#x2500;</span><span class="unicode">2500</span></div>
+      <div class="glyph"><span class="char">&#x2501;</span><span class="unicode">2501</span></div>
+      <div class="glyph"><span class="char">&#x2561;</span><span class="unicode">2561</span></div>
+      <div class="glyph"><span class="char">&#x2562;</span><span class="unicode">2562</span></div>
+      <div class="glyph"><span class="char">&#x2556;</span><span class="unicode">2556</span></div>
+      <div class="glyph"><span class="char">&#x2555;</span><span class="unicode">2555</span></div>
+      <div class="glyph"><span class="char">&#x2563;</span><span class="unicode">2563</span></div>
+      <div class="glyph"><span class="char">&#x2551;</span><span class="unicode">2551</span></div>
+      <div class="glyph"><span class="char">&#x2557;</span><span class="unicode">2557</span></div>
+      <div class="glyph"><span class="char">&#x255d;</span><span class="unicode">255d</span></div>
+      <div class="glyph"><span class="char">&#x255c;</span><span class="unicode">255c</span></div>
+      <div class="glyph"><span class="char">&#x255b;</span><span class="unicode">255b</span></div>
+      <div class="glyph"><span class="char">&#x255e;</span><span class="unicode">255e</span></div>
+      <div class="glyph"><span class="char">&#x255f;</span><span class="unicode">255f</span></div>
+      <div class="glyph"><span class="char">&#x255a;</span><span class="unicode">255a</span></div>
+      <div class="glyph"><span class="char">&#x2554;</span><span class="unicode">2554</span></div>
+      <div class="glyph"><span class="char">&#x2569;</span><span class="unicode">2569</span></div>
+      <div class="glyph"><span class="char">&#x2566;</span><span class="unicode">2566</span></div>
+      <div class="glyph"><span class="char">&#x2560;</span><span class="unicode">2560</span></div>
+      <div class="glyph"><span class="char">&#x2550;</span><span class="unicode">2550</span></div>
+      <div class="glyph"><span class="char">&#x256c;</span><span class="unicode">256c</span></div>
+      <div class="glyph"><span class="char">&#x2567;</span><span class="unicode">2567</span></div>
+      <div class="glyph"><span class="char">&#x2568;</span><span class="unicode">2568</span></div>
+      <div class="glyph"><span class="char">&#x2564;</span><span class="unicode">2564</span></div>
+      <div class="glyph"><span class="char">&#x2565;</span><span class="unicode">2565</span></div>
+      <div class="glyph"><span class="char">&#x2559;</span><span class="unicode">2559</span></div>
+      <div class="glyph"><span class="char">&#x2558;</span><span class="unicode">2558</span></div>
+      <div class="glyph"><span class="char">&#x2552;</span><span class="unicode">2552</span></div>
+      <div class="glyph"><span class="char">&#x2553;</span><span class="unicode">2553</span></div>
+      <div class="glyph"><span class="char">&#x256b;</span><span class="unicode">256b</span></div>
+      <div class="glyph"><span class="char">&#x256a;</span><span class="unicode">256a</span></div>
+      <div class="glyph"><span class="char">&#x25a0;</span><span class="unicode">25a0</span></div>
+      <div class="glyph"><span class="char">&#x25b2;</span><span class="unicode">25b2</span></div>
+      <div class="glyph"><span class="char">&#x25bc;</span><span class="unicode">25bc</span></div>
+      <div class="glyph"><span class="char">&#x25ba;</span><span class="unicode">25ba</span></div>
+      <div class="glyph"><span class="char">&#x25c4;</span><span class="unicode">25c4</span></div>
+
+
+    </section>
+    <footer>&copy; 2021 &mdash; Damian Vila</footer>
+  </div>
+</body>
+</html>
