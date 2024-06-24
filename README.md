@@ -2,7 +2,7 @@
 
 A 6x8 pixel font based on the one in the HP 100LX
 
-![All characters](https://damianvila.com/lexis/chars-all.png)
+![All characters](images/lexis-chars.png?raw=true)
 
 This font was inspired by font in the HP 100LX Palmtop PC, but with expanded languages.  
 
@@ -10,24 +10,13 @@ A glyphs reference chart is included in the **demo** folder.
 
 ## Features
 
-- Mac Roman and Windows 1252 glyphs included.
 - All Western European languages supported.
-- Greek letters included.
-- Cyrillic support.
+- Support for Greek and Cyrillic.
+- Full kana support (hiragana and katakana).
 - Hebrew characters.
-- Katakana and Hiragana support.
 - Original Symbols
+- Symbols for Legacy Computers (1FB00-1FBFF) included
 - TTF, WOFF and WOFF2 files provided.
-
-## Glyphs Samples
-
-**Latin characters**  
-
-![Latin characters](https://damianvila.com/lexis/chars-latin.png)  
-
-**Symbol Characters**  
-
-![Symbols](https://damianvila.com/lexis/chars-symbols.png)  
 
 ## License
 
