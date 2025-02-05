@@ -1,3 +1,9 @@
+> [!IMPORTANT]
+> This repository has moved to https://codeberg.org/Dmian/font-lexis
+
+> [!WARNING]
+> This repository is now archived and no longer mantained on GitHub.
+
 # Lexis
 
 A 6x8 pixel font based on the one in the HP 100LX
